@@ -1,9 +1,17 @@
 
 
-
+    function createGrid(size=16){
     const container = document.querySelector(".grid-container");
 
-    let length = 16; //update later to an argument
+    //we want to cehck if grid already exists and then clear it out)
+    if(container.hasChildNodes){
+        while(container.firstChild){
+            container.removeChild(container.firstChild)
+        }
+
+    }
+
+    let length = size; //update later to an argument
 
     for (let index = 0; index < length; index++) {
         let gridRow = document.createElement('div');
@@ -28,7 +36,19 @@
     }
 
     container.appendChild(gridRow)
+    }}
+
+    createGrid();
+
+    function newGrid(){
+        size=window.prompt("Please provide a length between 1-100");
+
+        if(0<size<101){
+            createGrid(size)
+        }
     }
+
+
 
 
 
