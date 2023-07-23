@@ -1,22 +1,25 @@
 .tile {
-background-color: aqua;
-width: 30px;
-height: 30px;
-border: 0.5px;
-border-style: dashed;
-margin: 0px;
-}
+
+
+
+flex:1;}
 
 .grid-row{
-    display: flex;
-    width: 4800px;
-    height: 30px;
-    margin: 0px;
+    display:flex;
+    flex:1;
 }
 
-.grid-container {
-    display: block;
-    width: 480px;
-    height: 480px;
-    padding: 0px;
+
+.grid-container 
+  
+{
+    border: 2px solid #a8dadc;
+    border-radius: 1rem;
+    width: 25rem;
+    height: 25rem;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    flex-direction: column;
 }

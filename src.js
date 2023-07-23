@@ -1,9 +1,9 @@
 
 
-    function createGrid(size=16){
+function createGrid(size=3){
     const container = document.querySelector(".grid-container");
 
-    //we want to cehck if grid already exists and then clear it out)
+
     if(container.hasChildNodes){
         while(container.firstChild){
             container.removeChild(container.firstChild)
